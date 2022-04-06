@@ -3,7 +3,26 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>HG_Finance</RootNamespace>
+    <ApplicationIcon>HG-FINANCE.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Miguel Oliveira</Authors>
+    <Description>Uma bibioteca para uso dos produtos da HG-FINANCE em CSharp</Description>
+    <Copyright>©️ Copyright Miguel Oliveira, HG-FINANCE - Todos os Direitos Reservados.</Copyright>
+    <PackageProjectUrl>https://github.com/eimigueloliveir/HG-Finance</PackageProjectUrl>
+    <PackageIcon>HG-FINANCE.jpg</PackageIcon>
+    <RepositoryUrl>https://github.com/eimigueloliveir/HG-Finance</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="HG-FINANCE.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\HG-FINANCE.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
