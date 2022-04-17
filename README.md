@@ -1,5 +1,5 @@
 # HG Finance
-
+[![Downloads](https://img.shields.io/nuget/dt/HG-Finance.svg)](https://www.nuget.org/packages/HG-Finance/)<br>
 Welcome to the HG Finance library for CSharp!
 
 Now you can simply get financial data (currency exchange, cryptocurrency exchange, Brazilian government taxes and stock market) from the HG Finance API directly in your Csharp app!
