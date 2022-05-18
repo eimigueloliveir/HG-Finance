@@ -1,9 +1,39 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>HG_Finance</RootNamespace>
+    <ApplicationIcon>HG-FINANCE.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.1</Version>
+    <Authors>Miguel Oliveira &amp; Paulo HS</Authors>
+    <Description>Uma bibioteca para uso dos produtos da HG-FINANCE em CSharp
+
+</Description>
+    <Copyright>©️ Copyright MiguelSoft, HG-FINANCE - Todos os Direitos Reservados.</Copyright>
+    <PackageProjectUrl>https://github.com/eimigueloliveir/HG-Finance</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/eimigueloliveir/HG-Finance</RepositoryUrl>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="HG-FINANCE.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
