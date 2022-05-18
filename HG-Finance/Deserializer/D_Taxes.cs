@@ -2,7 +2,7 @@
 
 namespace HG_Finance
 {
-    public class taxes
+    public class D_Taxes
     {
         [JsonProperty(PropertyName = "date")]
         public DateFormatHandling date { get; set; }

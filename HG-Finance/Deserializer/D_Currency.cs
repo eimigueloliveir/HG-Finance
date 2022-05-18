@@ -2,7 +2,7 @@
 
 namespace HG_Finance
 {
-    public class Currency
+    public class D_Currency
     {
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }

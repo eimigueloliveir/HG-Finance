@@ -2,7 +2,7 @@
 
 namespace HG_Finance
 {
-    public class bitcoin
+    public class D_Bitcoin
     {
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
