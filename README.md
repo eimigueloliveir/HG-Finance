@@ -56,18 +56,29 @@ using HG_Finance;
 ```
 - first create a variable and add your Key
 ```csharp
-HG_Client.key = "your key";
+HG_Client clientHG = new()
+        {
+            Key = "You key",
+        };
 ```
 **using CurrenciesBuy**
 
 - the quotation of several currencies against the real such as Dollar (USD), Euro (EUR), Pound (GBP), Peso (ARS), Canadian Dollar (CAD), Australian Dollar (AUD), Japanese Yen (JPY), China Renminbi (CNY) and Bitcoin (BTC);
 
+- first call the method and add the abbreviation of the desired currency
 ```csharp
-decimal correncies = HG_Client.currenciesBuy("desired currency");
+clientHG.Currencies("USD");
 ```
+- then use the following methods to receive the result
+```
+decimal buy = clientHG.CurrencyResponse.Buy;
 
+decimal Variation = clientHG.CurrencyResponse.Variation;
 
+string Name = clientHG.CurrencyResponse.Name;
 
+decimal sell = clientHG.CurrencyResponse.Sell;
+```
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
